@@ -1,0 +1,102 @@
+
+<mat-toolbar color="primary">
+    <span>Aplikacja Angular</span>
+</mat-toolbar>
+
+
+<div style="margin:30px;padding:30px;border:1px solid #ccc;border-radius:10px">
+    <h1>Fronetend JS Framework</h1>
+    React i Angular to dwa popularne frameworki JavaScript do tworzenia interfejsów użytkownika (UI) dla aplikacji webowych. Oba oferują różne funkcje i podejścia do rozwoju, co czyni je odpowiednimi dla różnych projektów i preferencji programistów.
+</div>
+
+<div style="padding:30px">
+
+<mat-tab-group>
+    <mat-tab label="Zakładka 1"><div style="padding:20px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tellus purus, varius eu ante id, tincidunt tincidunt ex. Praesent vitae hendrerit nibh. Duis nec dolor aliquam, facilisis risus ac, elementum dui. Vivamus elit nisi, suscipit nec sem ac, tempor posuere urna. Donec nec risus ante. Praesent nec finibus quam. Donec tempor facilisis dolor in facilisis. Proin lacinia metus eget erat semper euismod. Nunc viverra laoreet odio id condimentum. Sed condimentum risus id libero fringilla eleifend. Proin eget mi accumsan, sagittis lorem sit amet, laoreet mauris. Morbi vel sodales nunc. Nunc dolor mi, dignissim vel efficitur at, blandit sed lacus. Proin iaculis ipsum vel mi placerat pretium. In vitae volutpat odio.</div></mat-tab>
+    <mat-tab label="Zakładka 2"><div style="padding:20px">Mauris et massa vel ex tincidunt scelerisque sed nec ligula. Donec augue ligula, pharetra ut dolor quis, malesuada feugiat turpis. Morbi eu elementum augue. Vestibulum ac dignissim tellus, non aliquet augue. Fusce ac tortor eget quam hendrerit tincidunt. Pellentesque dignissim dui quis nisl facilisis, sit amet tempus nisl porta. Quisque pretium, nisi in varius rhoncus, leo libero congue augue, quis rhoncus magna ex eu libero. Fusce eleifend ante in bibendum accumsan. Sed varius purus efficitur elit tincidunt interdum.</div></mat-tab>
+    <mat-tab label="Zakładka 3"><div style="padding:20px">Nulla eu lobortis lorem. Sed tortor turpis, commodo sit amet cursus sed, consequat a diam. Nam nec risus at est maximus dictum ut hendrerit lectus. Curabitur dapibus mauris tortor, id tempus odio scelerisque in. Pellentesque ut mi vel justo varius consequat. Aenean suscipit leo sapien, quis tristique tellus tincidunt nec. Nullam faucibus elit diam. Sed odio ipsum, volutpat vel pellentesque sit amet, varius eu sapien. Quisque turpis odio, convallis accumsan lobortis non, lobortis non odio. Nulla quis euismod ex, nec finibus nisi. Nunc aliquam nisi at ipsum fringilla dignissim. Sed sodales est ut lectus faucibus fermentum non quis magna.</div>
+    </mat-tab>
+  </mat-tab-group>
+</div>
+
+<mat-grid-list cols="2" p="23px" rowHeight="2:1">
+    <mat-grid-tile style="color:#555;"><div style="text-align:center;padding:20px"><h1>React</h1>React to biblioteka JavaScript, stworzona przez Facebook, która umożliwia budowanie interaktywnych interfejsów użytkownika. Choć React jest zwykle nazywany biblioteką, jego rozbudowane funkcje i podejście do budowy aplikacji sprawiają, że często jest traktowany jak framework. React wykorzystuje składnię JSX, która pozwala na pisanie komponentów interfejsu użytkownika w sposób deklaratywny i wydajny. Jednym z głównych założeń Reacta jest wprowadzenie unidirectionalnego przepływu danych, co sprawia, że zarządzanie stanem aplikacji jest prostsze i bardziej przewidywalne. React znajduje zastosowanie zarówno w tworzeniu małych, interaktywnych elementów na stronach internetowych, jak i w rozbudowanych aplikacjach internetowych. </div></mat-grid-tile>
+    <mat-grid-tile style="color:#555;"><div style="text-align:center;padding:20px"><h1>Angular</h1>Angular jest otwartym frameworkiem i platformą służącą do budowania aplikacji jednostronicowych (SPA). Stworzony w języku TypeScript, jest wspierany i rozwijany przez Google. Oferuje programistom szeroki zestaw gotowych narzędzi i rozwiązań, które mogą być dostosowane i rozbudowane zgodnie z indywidualnymi potrzebami. Angular cieszy się dużą popularnością ze względu na swoją wszechstronność, umożliwiając tworzenie aplikacji internetowych o różnym stopniu złożoności. Ponadto, coraz częściej wykorzystuje się go także do tworzenia aplikacji mobilnych. Framework automatycznie synchronizuje model danych z widokiem, co pozwala na efektywne wykorzystanie koncepcji architektury MVC (Model-View-Controller) w środowisku JavaScript.</div></mat-grid-tile>
+</mat-grid-list>
+
+<div style="padding:30px">
+<mat-accordion>
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Akordeon 1
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>Zawartość akordeonu 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Akordeon 2
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>Zawartość akordeonu 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Akordeon 3
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>Zawartość akordeonu 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
+
+<div style="margin-top: 20px;padding:30px">
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+   
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Nazwa </th>
+      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+
+    <!-- Calories Column -->
+    <ng-container matColumnDef="calories">
+      <th mat-header-cell *matHeaderCellDef> Kalorie </th>
+      <td mat-cell *matCellDef="let element"> {{element.calories}} </td>
+    </ng-container>
+
+    <!-- Fat Column -->
+    <ng-container matColumnDef="fat">
+      <th mat-header-cell *matHeaderCellDef> Tłuszcz (g) </th>
+      <td mat-cell *matCellDef="let element"> {{element.fat}} </td>
+    </ng-container>
+
+    <!-- Carbs Column -->
+    <ng-container matColumnDef="carbs">
+      <th mat-header-cell *matHeaderCellDef> Węglowodany (g) </th>
+      <td mat-cell *matCellDef="let element"> {{element.carbs}} </td>
+    </ng-container>
+
+    <!-- Protein Column -->
+    <ng-container matColumnDef="protein">
+      <th mat-header-cell *matHeaderCellDef> Białko (g) </th>
+      <td mat-cell *matCellDef="let element"> {{element.protein}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>
+
+
+<footer style="padding:30px;background:gray;text-align:center">
+    Angular &copy; 2024 
+</footer>  
